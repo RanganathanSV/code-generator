@@ -1,5 +1,4 @@
 const fs = require("fs");
-const { templateSample: template } = require("./template.sample.ts");
 
 function generateDTOCode(template, allValidators, parent) {
   const properties = template.fields.map((field) => {
@@ -89,7 +88,7 @@ function generateMainDTOCode(template) {
 }
 
 
-const generatedCode = generateMainDTOCode(template);
+const generatedCode = generateMainDTOCode(require("./template.sample.ts").templateSample);
 
 // Write the generated code to a file (optional)
 fs.writeFileSync(

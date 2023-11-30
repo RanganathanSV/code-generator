@@ -2,9 +2,9 @@
   "name": "code-generator",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "scripts": { 
+    "generate:dto": "node dto/dto.generator.ts",
+    "generate:dto-test": "node dto/dto-test.generator.ts"
   },
   "repository": {
     "type": "git",
